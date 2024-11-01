@@ -7,7 +7,7 @@
 //
 
 #import "ORViewController.h"
-
+#import <ORFramework/ORTestApi.h>
 @interface ORViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [ORTestApi testApi];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

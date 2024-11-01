@@ -18,25 +18,25 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                        Test Framework
                        DESC
 
   s.homepage         = 'https://github.com/wanqiang/ORFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wanqiang' => 'wanqiang@longshine.com' }
-  s.source           = { :git => 'https://github.com/wanqiang/ORFramework.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/GithuberWqiang/ORFramework', :tag => '0.0.1' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
-  s.source_files = 'ORFramework/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ORFramework' => ['ORFramework/Assets/*.png']
-  # }
+  s.requires_arc = true
+  s.source_files = 'ORFramework/Classes/**/*.{h,m}'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+   s.resource_bundles = {
+     'ORFramework' => ['ORFramework/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.frameworks = 'UIKit', 'MapKit'
+#   s.dependency 'AFNetworking', '~> 2.3'
 end
